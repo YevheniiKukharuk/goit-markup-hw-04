@@ -349,15 +349,23 @@ a {
   box-sizing: border-box;
   border-radius: 4px;
 }
+.clients-list .clients-list-link {
+  fill: #afb1b8;
+}
+
+.clients-list .clients-list-link:hover,
+.clients-list .clients-list-link:focus {
+  fill: var(--accent-color);
+}
 .clients-list-item:hover,
 .clients-list-item:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-.clients-icon {
+.clients-list .clients-icon {
   fill: #afb1b8;
 }
-.clients-list-item:hover .clients-icon {
+.clients-list-link:hover .clients-icon {
   fill: var(--accent-color);
 }
 .page-footer {
@@ -377,6 +385,10 @@ a {
   margin: 0px;
   padding-bottom: 20px;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .footer-social {
   display: block;
@@ -396,7 +408,6 @@ a {
 .mailing {
   display: block;
   margin-left: auto;
-  text-transform: uppercase;
 }
 .logo-footer {
   color: #ffffff;
@@ -440,6 +451,9 @@ a {
 }
 
 /*css for portfolio.html*/
+.page-content {
+  margin-top: 94px;
+}
 .page-content .button:hover,
 .page-content .button:focus {
   background-color: var(--accent-color);
